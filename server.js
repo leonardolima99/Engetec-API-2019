@@ -25,7 +25,7 @@ const init = async () => {
 
     const server = Hapi.server({
         port: process.env.PORT || 3000,
-        host: 'localhost'
+        host: 'https://engetec-api.herokuapp.com'
     });
 
     server.route({
