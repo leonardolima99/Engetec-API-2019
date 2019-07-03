@@ -24,8 +24,8 @@ mongoose.connect('mongodb+srv://dbRyszol:05091993a@cluster0-yeubg.mongodb.net/te
 const init = async () => {
 
     const server = Hapi.server({
-        port: process.env.PORT || 3000,
-        host: 'https://engetec-api.herokuapp.com'
+        port: process.env.PORT || 3000
+        // host: 'https://engetec-api.herokuapp.com'
     });
 
     server.route({
