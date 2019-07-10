@@ -12,8 +12,8 @@ const HomeController = require('./controllers/admin/HomeController')
 const GaleriaController = require('./controllers/admin/GaleriaController')
 const EventosController = require('./controllers/admin/EventosController')
 
-mongoose.connect('mongodb://localhost:27017/engetec', {
-// mongoose.connect('mongodb+srv://dbRyszol:05091993a@cluster0-yeubg.mongodb.net/test?retryWrites=true&w=majority', {
+// mongoose.connect('mongodb://localhost:27017/engetec', {
+mongoose.connect('mongodb+srv://dbRyszol:05091993a@cluster0-yeubg.mongodb.net/test?retryWrites=true&w=majority', {
   useNewUrlParser: true
 }).then(res => {
   console.log('Conectado ao Mongo.')
