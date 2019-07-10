@@ -17,6 +17,9 @@ const EventosSchema = mongoose.Schema({
     type: String,
     default: 'A descrição do evento.'
   },
+  image: {
+    type: String
+  },
   createAt: {
     type: Date,
     default: Date.now

@@ -11,7 +11,8 @@ module.exports = {
       name: req.payload.name,
       local: req.payload.local,
       date: req.payload.date,
-      description: req.payload.description
+      description: req.payload.description,
+      image: req.payload.image
     }
     return await Eventos.create(conteudo)
   },
@@ -25,7 +26,8 @@ module.exports = {
           name: req.payload.name,
           local: req.payload.local,
           date: req.payload.date,
-          description: req.payload.description
+          description: req.payload.description,
+          image: req.payload.image
         }
       })
   },
