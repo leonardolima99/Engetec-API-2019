@@ -85,6 +85,50 @@ const init = async () => {
     })
     server.route({
       method: 'GET',
+      path: '/galeria',
+      config: {
+        cors: {
+            origin: ['*'],
+            additionalHeaders: ['cache-control', 'x-requested-with']
+          }
+        },
+      handler: GaleriaController.show
+    })
+    server.route({
+      method: 'POST',
+      path: '/galeria',
+      config: {
+        cors: {
+            origin: ['*'],
+            additionalHeaders: ['cache-control', 'x-requested-with']
+          }
+        },
+      handler: GaleriaController.create
+    })
+    server.route({
+      method: 'PUT',
+      path: '/galeria/{id}',
+      config: {
+        cors: {
+            origin: ['*'],
+            additionalHeaders: ['cache-control', 'x-requested-with']
+          }
+        },
+      handler: GaleriaController.edit
+    })
+    server.route({
+      method: 'DELETE',
+      path: '/galeria/{id}',
+      config: {
+        cors: {
+            origin: ['*'],
+            additionalHeaders: ['cache-control', 'x-requested-with']
+          }
+        },
+      handler: GaleriaController.delete
+    })
+    server.route({
+      method: 'GET',
       path: '/eventos',
       config: {
         cors: {

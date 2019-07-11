@@ -1,9 +1,16 @@
 const mongoose = require('mongoose')
 
+// const controle = mongoose.Schema({
+//   imagem: {
+//     type: Array,
+//     default: [0]
+//   }
+// })
+
 const GaleriaSchema = mongoose.Schema({
-  link: {
-    type: String,
-    default: 'Um link qualquer'
+  // imagens: [controle]
+  imagem: {
+    type: String
   }
 })
 
