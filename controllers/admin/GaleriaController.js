@@ -20,11 +20,14 @@ module.exports = {
     },
     {
       $set: {
-        imagens: req.payload.imagem
+        imagem: req.payload.imagem
       }
     })
   },
   delete: async (req, h) => {
     return await Galeria.deleteOne({"_id": req.params.id })
+  },
+  deleteAll: async (req, h) => {
+    return await Galeria.deleteMany({})
   }
 }

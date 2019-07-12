@@ -128,6 +128,17 @@ const init = async () => {
       handler: GaleriaController.delete
     })
     server.route({
+      method: 'DELETE',
+      path: '/galeria/all',
+      config: {
+        cors: {
+            origin: ['*'],
+            additionalHeaders: ['cache-control', 'x-requested-with']
+          }
+        },
+      handler: GaleriaController.deleteAll
+    })
+    server.route({
       method: 'GET',
       path: '/eventos',
       config: {
