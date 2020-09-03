@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "@hapi/hapi": "^18.3.1",
+    "@hapi/hapi": "^19.1.1",
     "mongoose": "^5.6.1",
     "nodemailer": "^6.2.1"
   }
